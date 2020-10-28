@@ -1,13 +1,7 @@
-body{
-    background-color: powderblue;
-}
-h1{
+
+#p01{
     color: blue;
-    font-family: verdana;
-    font-size: 300%;
 }
-p{
+.error{
     color: red;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 160%;
 }
