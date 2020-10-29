@@ -1,10 +1,29 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <style>
+            img{
+                width: 100%;
+            }
+        </style>
+    </head>
     <body>
+        <!-- An image height and width using both -->
+        <h2>Width/Height Attributes or Style?</h2>
+        <p>The first image uses the width attribute (set to 128 pixels), but the style in the head section overrides it,
+            and sets the width to 100%
+        </p>
+        <img src="https://www.w3schools.com/html/html5.gif" alt="HTML5 Icon" width="128" height="128">
+        <p>The second image uses the style attribute to set the width to 128 pixels, this will not be overridden by the style in the head section:</p>
+        <img src="https://www.w3schools.com/html/html5.gif" alt="HTML5 Icon" style="width: 128px;height: 128px;">
+        <!-- An image height and width using CSS -->
+        <h2>Image Size</h2>
+        <p>Here we use the style attribute to specify the width and height of an image:</p>
+        <img src="https://www.w3schools.com/html/img_girl.jpg" alt="Girl in a jacket" style="width: 500px; height: 600px;">
         <!-- An image height and width using attributes -->
         <h2>Image Size</h2>
         <p>Here we specify the width and height of an image with the width and height attributes:</p>
-        <img src="https://www.w3schools.com/html/img_girl.jpg" alt="Girl in a jacket" width="500" height="500">
+        <img src="https://www.w3schools.com/html/img_girl.jpg" alt="Girl in a jacket" width="500" height="600">
         <!-- An image -->
         <h2>Italian Trulli</h2>
         <img src="https://www.w3schools.com/html/pic_trulli.jpg" alt="Italian Trullti" style="width: 100%;">
