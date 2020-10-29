@@ -6,6 +6,15 @@
         </style>
     </head>
     <body>
+        <!-- An image map with clickable regions -->
+        <h2>Image Maps</h2>
+        <p>Click on the sun or on one of the planets to watch it closer:</p>
+        <img src="https://www.w3schools.com/html/planets.gif" alt="Planets" usemap="#planetmap" style="width: 145px; height: 126px;">
+        <map name="planetmap">
+            <area shape="rect" coords="0,0,82,126" alt="Sun" href="html_basic.html">
+            <area shape="circle" coords="90,58,3" alt="Mercury" href="html_basic.html">
+            <area shape="circle" coords="124,58,8" alt="Venus" href="html_basic.html">
+        </map>
         <!-- A moving image -->
         <h2>Animated Images</h2>
         <p>HTML allows moving images:</p>
