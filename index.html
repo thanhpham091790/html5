@@ -4,7 +4,6 @@
         <style>
             table, th, td{
                 border: 1px solid black;
-                border-collapse: collapse;
             }
             th, td{
                 padding: 15px;
@@ -12,9 +11,32 @@
             th{
                 text-align: left;
             }
+            table{
+                border-spacing: 15px;
+            }
         </style>
     </head>
     <body>
+        <!-- Table with cell spacing -->
+        <h2>Border Spacing</h2>
+        <p>Border spacing specifies the space between the cells.</p>
+
+        <!-- Table cells that span more than one row -->
+        <h2>Cell that spans two rows</h2>
+        <p>To make a cell span more than one row, use the rowspan attribute.</p>
+        <table style="width: 100%;">
+            <tr>
+                <th>Name:</th>
+                <td>Bill Gate</td>
+            </tr>
+            <tr>
+                <th rowspan="2">Telephone:</th>
+                <td>232323232323</td>
+            </tr>
+            <tr>
+                <td>3232323232323</td>
+            </tr>
+        </table>
         <!-- Table cells that span more than one column -->
         <h2>Cell that spans two columns</h2>
         <p>To make a cell span more than one column, use the colspan attribute.</p>
