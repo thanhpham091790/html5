@@ -5,9 +5,35 @@
             ul#menu li{
                 display: inline;
             }
+            ul#nav{
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #333;
+            }
+            ul#nav li{
+                float: left;
+            }
+            ul#nav li a{
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 16px;
+                text-decoration: none;
+            }
         </style>
     </head>
     <body>
+        <!-- A navigation menu -->
+        <h2>Navigation menu</h2>
+        <p>In this example, we use CSS to style the list horizontally, to create a navigation menu:</p>
+        <ul id="nav">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
         <!-- A horizontal list -->
         <h2>Horizontal list</h2>
         <ul id="menu">
