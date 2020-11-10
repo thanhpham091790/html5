@@ -3,9 +3,11 @@
     <body>
         <!-- Input type button -->
         <h2>Input Button</h2>
+        
         <!-- Input type checkbox -->
         <h2>Checkboxes</h2>
         <p>The <strong>input type="checkbox"</strong> defines a checkbox:</p>
+
         <!-- Input type radio -->
         <h2>Radio Buttons</h2>
         <p>The <strong>input type="radio"</strong> defines a radio button:</p>
@@ -22,11 +24,18 @@
         <h2>Number Field</h2>
         <p>The <strong>input type="number"</strong> defines a numeric input field.</p>
         <p>You can use the min and max attributes to add numeric restrictions in the input field.</p>
+
         <!-- Input type number - with steps -->
         <h2>Numeric Steps</h2>
         <p>Depending on browser support: Fixed steps will apply in the input field.</p>
 
+        <!-- Input type date - data picker -->
+        <h2>Date Field</h2>
+        <p>The <strong>input type="date"</strong> is used for input fields that should contain a date.</p>
+
         <form action="/action_page.php">
+            <label for="birthday">Birthday:</label>
+            <input type="date" id="birthday" name="birthday"><br>
             <label for="quantity">Quantity (between 0 and 100, step 10):</label>
             <input type="number" id="quantity" name="quantity" min="0" max="100" step="10" value="30"><br>
             <label for="fname">First name:</label><br>
