@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html>
     <body>
+        <!-- using the <output> element -->
+            <h2>The output element</h2>
+            <p>The output element represents the result of a calculation.</p>
+
+            <form action="/action_page.php" oninput="x.value=parseInt(a.value) + parseInt(b.value)">
+                0 <input type="range" id="a" name="a" value="50"> 100 + 
+                <input type="number" id="b" name="b" value="50"> = 
+                <output name="x" for="a b"></output><br><br>
+                <input type="submit">
+            </form>
         <!-- Using the <datalist> element -->
             <h2>The datalist element</h2>
             <p>The datalist element specifics a list of pre-defined options for an input element.</p>
