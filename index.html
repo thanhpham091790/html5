@@ -22,8 +22,11 @@
             .footer{
                 background-color: lightgreen;
             }
-            .aside{
+            .aside1{
                 background-color: moccasin;
+            }
+            .aside2{
+                background-color: violet;
             }
 
             @media all and (min-width: 768px){
@@ -31,6 +34,7 @@
                 .main{flex: 3 0px;}
                 .aside{order: 1;}
                 .main{order: 2;}
+                .aside2{order: 3;}
                 .footer{order: 4;}
             }
         </style>
@@ -41,12 +45,15 @@
             <header class="header">
                 Header
             </header>
-            <aside class="aside">
-                Aside
+            <aside class="aside aside1">
+                Aside1
             </aside>
             <article class="main">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed ex turpis. Cras luctus nibh lectus, in ullamcorper ex tempor eleifend. Nulla bibendum, eros a consequat vestibulum, orci massa fermentum quam, sed commodo nunc ex vitae nisl. Aliquam ullamcorper interdum est nec tincidunt.</p>
             </article>
+            <aside class="aside aside2">
+                Aside2
+            </aside>
             <footer class="footer">
                 Footer
             </footer>
