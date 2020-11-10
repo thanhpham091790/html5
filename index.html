@@ -1,6 +1,19 @@
 <!DOCTYPE html>
 <html>
     <body>
+        <!-- Using the <datalist> element -->
+            <h2>The datalist element</h2>
+            <p>The datalist element specifics a list of pre-defined options for an input element.</p>
+            <form action="/action_page.php">
+                <input list="browsers" name="browser">
+                <datalist id="browsers">
+                    <option value="Internet Explorer"></option>
+                    <option value="Firefox"></option>
+                    <option value="Chrome"></option>
+                    <option value="Opera"></option>
+                    <option value="Safari"></option>
+                </datalist>
+            </form>
         <!-- An input button -->
         <h2>The button element</h2>
         <button type="button" onclick="alert('Hello World!')">Click Me!</button>
