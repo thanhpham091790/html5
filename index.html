@@ -1,6 +1,25 @@
 <!DOCTYPE html>
 <html>
     <body>
+        <!-- Grouping form data -->
+        <h2>Grouping form data with fieldset</h2>
+        <p>The fieldset element is used to group related data in a form, and the legend element defines a caption for the fieldset element.</p>
+        <form action="/action_page.php">
+            <fieldset>
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" value="Thanh"><br>
+                <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+        <!-- Form with text field without a name attribute -->
+        <h2>The name attribute</h2>
+        <form action="/action_page.php">
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" value="Thanh"><br>
+            <input type="submit" value="Submit">
+        </form>
+        <p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+        <p>Notice that the value of the "First name" field will not be submitted, because the input element does not have a name attribute.</p>
         <!-- Form with text field and submit button -->
         <h2>HTML Form</h2>
         <form action="/action_page.php">
