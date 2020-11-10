@@ -7,8 +7,24 @@
             h1{color: red;}
             p{color: blue;}
         </style>
+        <link rel="stylesheet" href="styles.css">
+        <meta charset="UTF-8">
+        <meta name="description" content="Free Web Tutorials">
+        <meta name="keywords" content="HTML, CSS, Javascript">
+        <meta name="author" content="Thanh Pham">
+        <script>
+            function myFunction(){
+                document.getElementById("demo").innerHTML = "Hello Javascript!";
+            }
+        </script>
     </head>
     <body>
+        <!-- The <link> element defines a relationship to an external resource -->
+        <!-- The <meta> element defines special meta information -->
+        <!-- The <script> element defines client-side Javascript -->
+            <h1>My Web Page</h1>
+            <p id="demo">A paragraph.</p>
+            <button type="button" onclick="myFunction()">Try it</button>
         <!-- The <style> element contains style information -->
             <h1>This is a heading</h1>
             <p>This is a paragrah.</p>
