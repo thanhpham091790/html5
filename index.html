@@ -53,8 +53,20 @@
         <h2>Display a week input control</h2>
         <p>The <strong>input type="week"</strong> allows the user to select a week and year.</p>
         <p>If the browser support it, a date picker pops up when entering the input field.</p>
+
+        <!-- Input type time -->
+        <h1>show a time input control</h1>
+        <p>The <strong>input type="time"</strong> allows the user to select a time (no time zone):</p>
+        <p>If the browser supports it, a time picker pops up when entering the input field.</p>
+
+        <!-- Input type datetime -->
+        <p>Depending on browser support:<br> A date picker can pop-up when you enter the input field.</p>
         
         <form action="/action_page.php">
+            <label for="bdaytime">Select birthday time:</label>
+            <input type="datetime" id="bdaytime" name="bdaytime"><br><br>
+            <label for="appt">Select a time:</label>
+            <input type="time" id="appt" name="appt"><br><br>
             <label for="week">Select a week:</label>
             <input type="week" id="week" name="week"><br><br>
             <label for="bdaymonth">Birthday (month and year):</label>
