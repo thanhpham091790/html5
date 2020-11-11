@@ -41,7 +41,26 @@
         <h2>Show a color picker</h2>
         <p>The <strong>input type="color"</strong> is used for input fields that should contain a color.</p>
 
+        <!-- Input type range -->
+        <h2>Range Field</h2>
+        <p>Depending on browser support: The input type "range" can be displayed as a slider control.</p>
+
+        <!-- Input type month -->
+        <h2>Month Field</h2>
+        <p>The <strong>input type="month"</strong> allows the user to select a month and year.</p>
+
+        <!-- Input type week -->
+        <h2>Display a week input control</h2>
+        <p>The <strong>input type="week"</strong> allows the user to select a week and year.</p>
+        <p>If the browser support it, a date picker pops up when entering the input field.</p>
+        
         <form action="/action_page.php">
+            <label for="week">Select a week:</label>
+            <input type="week" id="week" name="week"><br><br>
+            <label for="bdaymonth">Birthday (month and year):</label>
+            <input type="month" id="bdaymonth" name="bdaymonth"><br><br>
+            <label for="vol">Volumne (between 0 and 50):</label>
+            <input type="range" id="vol" name="vol" min="0" max="50"><br><br>
             <label for="favcolor">Select your favorite color:</label>
             <input type="color" id="favcolor" name="favcolor" value="#ff0000"><br><br>
             <label for="datemax">Enter a date before 1980-01-01:</label>
