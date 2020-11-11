@@ -29,11 +29,19 @@
         <h2>Numeric Steps</h2>
         <p>Depending on browser support: Fixed steps will apply in the input field.</p>
 
-        <!-- Input type date - data picker -->
+        <!-- Input type date - date picker -->
         <h2>Date Field</h2>
         <p>The <strong>input type="date"</strong> is used for input fields that should contain a date.</p>
 
+        <!-- Input type date - with  restrictions -->
+        <h2>Date field restrictions</h2>
+        <p>Use the min and max attributes to add restrictions to dates:</p>
+
         <form action="/action_page.php">
+            <label for="datemax">Enter a date before 1980-01-01:</label>
+            <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
+            <label for="datemin">Enter a date after 2000-01-01</label>
+            <input type="date" id="datemin" name="datemin" min="2000-01-02"><br><br>
             <label for="birthday">Birthday:</label>
             <input type="date" id="birthday" name="birthday"><br>
             <label for="quantity">Quantity (between 0 and 100, step 10):</label>
