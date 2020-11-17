@@ -24,16 +24,37 @@
         <h1>The input formaction attribute</h1>
         <p>The formaction attribute specifies the URL of a file that will process the input when the form is submitted.</p>
 
+        <!-- The input formenctype attribute -->
+        <h1>The input formenctype attribute</h1>
+        <p>The formenctype attribute specifies how the form data should be encoded when submitted.</p>
+
+        <!-- The input formmethod attribute -->
+        <h1>The input formmethod attribute</h1>
+        <p>The formmethod attribute defines the HTTP method for sending form-data to the action URL.</p>
+
+        <!-- The input formnovalidate attribute -->
+        <h1>The input formnovalidate attribute</h1>
+
+        <!-- The input formtarget attribute -->
+        <h1>The input formtarget attribute</h1>
+        <p>The formtarget atribute specifies a name for a keyword that indicates where to display the response that is received after submitting the form.</p>
+
+        <!-- The input height and width attribute -->
+        <h1>The input height and width attributes</h1>
+        <p>The height and width attributes specify the height and width of an input type="image" element.</p>
+
+
         <label for="lname">Last name:</label>
         <input type="text" id="lname" name="lname" form="form1"><br><br>
 
-        <form action="/action_page.php" autocomplete="on" novalidate id="form1">
+        <form action="/action_page.php" autocomplete="on" id="form1" method="get" target="_blank">
             <label for="fname">First name:</label>
             <input type="text" id="fname" name="fname" autofocus><br><br>
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" autocomplete="off" required><br><br>
-            <input type="submit" value="Submit">
-            <input type="submit" formaction="/action_page2.php" value="Submit as Admin">
+            <input type="image" src="https://www.w3schools.com/html/img_submit.gif" alt="Submit" width="48" height="48">
+            <input type="submit" value="Submit using GET">
+            <input type="submit" formtarget="_blank" value="Submit to a new window/tab">
         </form>
     </body>
 </html>
