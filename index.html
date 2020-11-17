@@ -52,6 +52,8 @@
         <p>The multiple attribute specifies that the user is allowed to enter more than one value in an input field</p>
 
         <form action="/action_page.php" autocomplete="on" id="form1" method="get" target="_blank">
+            <label for="country_code">Country code:</label>
+            <input type="text" id="country_code" name="country_code" pattern="[A-Za-z]{3}" title="Three letter country code"><br><br>
             <label for="files">Select files:</label>
             <input type="file" name="files" multiple><br><br>
             <label for="datemax">Enter a date before 1980-01-01</label>
