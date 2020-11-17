@@ -15,14 +15,25 @@
         <h1>The input autofocus attribute</h1>
         <p>The autofocus attribute specifies that the input field should automatically get focus when the page loads. </p>
 
-        <form action="/action_page.php" autocomplete="on" novalidate>
+        <!-- The input form attribute -->
+        <h1>The input form attribute</h1>
+        <p>The form attribute specifies the form an input element belongs to.</p>
+        <p>The "last name" field below outside the form element, but still part of the form.</p>
+
+        <!-- The input formaction attribute -->
+        <h1>The input formaction attribute</h1>
+        <p>The formaction attribute specifies the URL of a file that will process the input when the form is submitted.</p>
+
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname" form="form1"><br><br>
+
+        <form action="/action_page.php" autocomplete="on" novalidate id="form1">
             <label for="fname">First name:</label>
             <input type="text" id="fname" name="fname" autofocus><br><br>
-            <label for="lname">Last name:</label>
-            <input type="text" id="lname" name="lname"><br><br>
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" autocomplete="off" required><br><br>
             <input type="submit" value="Submit">
+            <input type="submit" formaction="/action_page2.php" value="Submit as Admin">
         </form>
     </body>
 </html>
