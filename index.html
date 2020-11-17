@@ -62,7 +62,13 @@
         <!-- The input required attribute -->
         <p>The required attribute specifies that an input field must be filled out before submitting the form.</p>
 
+        <!-- The input step attribute -->
+        <h1>The input step attribute</h1>
+        <p>The step attribute specifies the legal number intervals for an input element.</p>
+
         <form action="/action_page.php" autocomplete="on" id="form1" method="get" target="_blank">
+            <label for="points">Points:</label>
+            <input type="number" id="points" name="points" step="3"><br><br>
             <label for="username">Username:</label>
             <input type="text" id="username" name="username" required>
             <label for="phone">Enter a phone number:</label>
