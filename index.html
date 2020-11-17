@@ -9,14 +9,15 @@
 
         <!-- The form novalidate attribute -->
         <p>The novalidate attribute specifies that the form data should not be validated when submitted.</p>
+        <p><strong>Note:</strong> The novalidate attribute of the form tag is not supported in Safari 10 (or earlier)</p>
 
-        <form action="/action_page.php" autocomplete="on">
+        <form action="/action_page.php" autocomplete="on" novalidate>
             <label for="fname">First name:</label>
             <input type="text" id="fname" name="fname"><br><br>
             <label for="lname">Last name:</label>
             <input type="text" id="lname" name="lname"><br><br>
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" autocomplete="off"><br><br>
+            <input type="email" id="email" name="email" autocomplete="off" required><br><br>
             <input type="submit" value="Submit">
         </form>
     </body>
