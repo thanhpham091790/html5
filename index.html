@@ -59,7 +59,12 @@
         <h1>The input placeholder attribute</h1>
         <p>The placeholder attribute specifies a short hint that describes the expected value of an input field.</p>
 
+        <!-- The input required attribute -->
+        <p>The required attribute specifies that an input field must be filled out before submitting the form.</p>
+
         <form action="/action_page.php" autocomplete="on" id="form1" method="get" target="_blank">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
             <label for="phone">Enter a phone number:</label>
             <input type="tel" id="phone" name="phone" placeholder="123-45-6789" pattern="[0-9]{3}-[0-9]{2}-[0-9]{4}"><br><br>
             <label for="country_code">Country code:</label>
