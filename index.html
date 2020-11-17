@@ -43,11 +43,18 @@
         <h1>The input height and width attributes</h1>
         <p>The height and width attributes specify the height and width of an input type="image" element.</p>
 
+        <!-- The list attribute -->
 
         <label for="lname">Last name:</label>
         <input type="text" id="lname" name="lname" form="form1"><br><br>
 
         <form action="/action_page.php" autocomplete="on" id="form1" method="get" target="_blank">
+            Webpage: <input type="url" list="url_list" name="link">
+            <datalist id="url_list">
+                <option label="W3Schools" value="https://www.w3schools.com"></option>
+                <option label="Google" value="https://www.google.com"></option>
+                <option label="Microsoft" value="https://www.microsoft.com"></option>
+            </datalist><br><br>
             <label for="fname">First name:</label>
             <input type="text" id="fname" name="fname" autofocus><br><br>
             <label for="email">Email:</label>
