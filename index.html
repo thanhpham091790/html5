@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
     <body>
+        <!-- Draw a line with lineTo() -->
+
         <!-- Draw on the canvas with Javascript -->
         <canvas id="myCanvas" width="200" height="100" style="border: 1px solid #c3c3c3;">
             Your browser does not support the HTML canvas tag.
@@ -9,8 +11,9 @@
         <script>
             var c  = document.getElementById("myCanvas");
             var ctx = c.getContext("2d");
-            ctx.fillStyle = "#FF0000";
-            ctx.fillRect(0,0,150,75);
+            ctx.moveTo(0,0);
+            ctx.lineTo(200,100);
+            ctx.stroke();
         </script>
     </body>
 </html>
