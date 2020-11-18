@@ -5,6 +5,7 @@
         <!-- Draw a circle with arc() -->
         <!-- Draw on the canvas with Javascript -->
         <!-- Draw a text with fillText() -->
+        <!-- Draw a text with strokeText() -->
         <canvas id="myCanvas" width="200" height="100" style="border: 1px solid #c3c3c3;">
             Your browser does not support the HTML canvas tag.
         </canvas>
@@ -13,7 +14,7 @@
             var c  = document.getElementById("myCanvas");
             var ctx = c.getContext("2d");
             ctx.font = "30px Arial";
-            ctx.fillText("Thanh Pham", 10, 50);
+            ctx.strokeText("Thanh Pham", 10, 50);
         </script>
     </body>
 </html>
