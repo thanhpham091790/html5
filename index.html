@@ -2,7 +2,7 @@
 <html>
     <body>
         <!-- Handle geolocation errors -->
-
+        <!-- Get geolocation and watch the position -->
         <!-- Get geolocation coordinates -->
         <p>Click the button to get your coordinates</p>
         <button onclick="getLocation()">Try it</button>
@@ -11,7 +11,7 @@
             var x = document.getElementById("demo");
             function getLocation(){
                 if(navigator.geolocation){
-                    navigator.geolocation.getCurrentPosition(showPosition, showError);
+                    navigator.geolocation.watchPosition(showPosition);
                 }else{
                     x.innerHTML = "Geolocation is not supported by this browser.";
                 }
@@ -19,16 +19,7 @@
             function showPosition(position){
                 x.innerHTML = "Latitude: " + position.coords.latitude + "<br>Longitude: " + position.coords.longitude;
             }
-            function showError(error){
-                switch(error.code){
-                    case error.PERMISSION_DENIED:
-                        x.innerHTML = "User denied the request for Geolocation.";
-                        break;
-                    case error.POSITION_UNAVAILABLE:
-                        x.innerHTML = "Locaiton information is unvailable";
-                        break;
-                }
-            }
+           
         </script>
     </body>
 </html>
