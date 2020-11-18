@@ -7,6 +7,7 @@
         <!-- Draw a text with fillText() -->
         <!-- Draw a text with strokeText() -->
         <!-- Draw a linear gradient -->
+        <!-- Draw a circle gradient -->
 
         <canvas id="myCanvas" width="200" height="100" style="border: 1px solid #c3c3c3;">
             Your browser does not support the HTML canvas tag.
@@ -16,7 +17,7 @@
             var c  = document.getElementById("myCanvas");
             var ctx = c.getContext("2d");
             // Create gradient
-            var grd = ctx.createLinearGradient(0,0,200,0);
+            var grd = ctx.createRadialGradient(75,50,5,90,60,100);
             grd.addColorStop(0,"red");
             grd.addColorStop(1,"white");
             // Fill with gradient
