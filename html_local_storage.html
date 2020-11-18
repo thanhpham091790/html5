@@ -2,7 +2,7 @@
 <html>
     <body>
         <!-- Store a counter permanently -->
-
+        <!-- Store a counter for one session -->
         <!-- Store a name permanently -->
 
         <p><button type="button" onclick="clickCounter()">Click me!</button></p>
@@ -11,12 +11,12 @@
         <script>
             function clickCounter(){
                 if(typeof(Storage) !== "undefined"){
-                    if(localStorage.clickcount){
-                        localStorage.clickcount = Number(localStorage.clickcount) + 1;
+                    if(sessionStorage.clickcount){
+                        sessionStorage.clickcount = Number(sessionStorage.clickcount) + 1;
                     }else{
-                        localStorage.clickcount = 1;
+                        sessionStorage.clickcount = 1;
                     }
-                    document.getElementById("result").innerHTML = "You have clicked the button " + localStorage.clickcount + " time(s).";
+                    document.getElementById("result").innerHTML = "You have clicked the button " + sessionStorage.clickcount + " time(s).";
                 }else{
                     document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage ...";
                 }
