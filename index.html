@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <!-- Store a counter permanently -->
+
+        <!-- Store a name permanently -->
+
+        <p><button type="button" onclick="clickCounter()">Click me!</button></p>
+        <div id="result"></div>
+
+        <script>
+            function clickCounter(){
+                if(typeof(Storage) !== "undefined"){
+                    if(localStorage.clickcount){
+                        localStorage.clickcount = Number(localStorage.clickcount) + 1;
+                    }else{
+                        localStorage.clickcount = 1;
+                    }
+                    document.getElementById("result").innerHTML = "You have clicked the button " + localStorage.clickcount + " time(s).";
+                }else{
+                    document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage ...";
+                }
+            }
+
+
+            // Check browser support
+            if(typeof(Storage) != "undefined"){
+                // Store
+                localStorage.setItem("lastname","Pham");
+                // Retrieve
+                document.getElementById("result").innerHTML = localStorage.getItem("lastname");
+            }else{
+                document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage ...";
+            }
+        </script>
+    </body>
+</html>
